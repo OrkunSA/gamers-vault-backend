@@ -1,4 +1,12 @@
 class UsersController < ApplicationController
+  
+
+  def index 
+    users = User.all 
+    render json: users, except: [:created_at, :updated_at], include: [:collections]
+  end
+  
+
   def create
     user = User.new(user_params)
 
@@ -8,6 +16,11 @@ class UsersController < ApplicationController
     else
       render json: { status: 500, message: 'There was an error in creating an account'}
     end
+  end
+
+  def collection 
+    
+    render json: {collection: current_user.games}, except: [:created_at, :updated_at] 
   end
 
 
