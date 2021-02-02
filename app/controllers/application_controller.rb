@@ -10,4 +10,9 @@ class ApplicationController < ActionController::Base
     def current_user
       @current_user ||= User.find(session[:id]) if session[:id]
     end
+
+    def authorized
+      render json: { message: 'Please log in' }, status: :unauthorized unless logged_in?
+    end
+    
   end
