@@ -20,7 +20,13 @@ class UsersController < ApplicationController
 
   def collection 
     
-    render json: {collection: current_user.games}, except: [:created_at, :updated_at] 
+    render json: current_user.games, except: [:created_at, :updated_at] 
+  end
+  
+  def destroy
+    game = Collection.find_by(params[:game_id])
+    game.destroy
+    render json: {message: "Succesfully deleted"}
   end
 
 
