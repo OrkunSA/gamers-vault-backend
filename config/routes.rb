@@ -6,7 +6,9 @@ Rails.application.routes.draw do
 
   #USER ROUTES
   get 'user/collections', to: 'users#collection'
-  resources :users, only: [:create, :index]
+  # get 'user/collections/:id', to: 'users#show_collection'
+  delete '/user/collections/:id', to: 'users#destroy'
+  resources :users, only: [:create, :index, :destroy]
 
   #SESSION ROUTES
   get 'logged_in', to: 'sessions#logged_in'
