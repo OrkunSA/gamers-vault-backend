@@ -13,6 +13,14 @@ Gamers Vault is an app with a React frontend and Ruby on Rails API backend to he
 
 `bundle install`
 
+- To create database
+
+`rails db:migrate`
+
+- To run seed file
+
+`rails db:seed`
+
 - To run the Rails server;
 
 ` rails s -p 3001`
@@ -40,6 +48,10 @@ Gamers Vault is an app with a React frontend and Ruby on Rails API backend to he
 # Demo
 
 https://youtu.be/n4-kXK4vx3k
+
+# Blog
+
+https://orkunsalam.medium.com/gamers-vault-react-redux-rails-65f4378d7f98
 
 # Contributing
 
