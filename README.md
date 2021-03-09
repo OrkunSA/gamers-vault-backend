@@ -1,3 +1,6 @@
+<img width="1323" alt="Gamers Vault" src="https://user-images.githubusercontent.com/63612622/110399115-da11f300-803a-11eb-95c0-bea804ef6528.png">
+
+
 # Description
 
 Gamers Vault is an app with a React frontend and Ruby on Rails API backend to help users to browse through 500,000+ games by using RAWG external API. They can alsp perform almost all the CRUD actions on their games collections.
@@ -33,6 +36,10 @@ Gamers Vault is an app with a React frontend and Ruby on Rails API backend to he
 - Click on add to collection to add the game to your collection.
 
 - Clicking on delete from collection on collection view will delete the game from your collection.
+
+# Demo
+
+https://youtu.be/n4-kXK4vx3k
 
 # Contributing
 
