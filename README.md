@@ -47,7 +47,7 @@ Gamers Vault is an app with a React frontend and Ruby on Rails API backend to he
 
 # Demo
 
-https://youtu.be/n4-kXK4vx3k
+[![DEMO](http://img.youtube.com/vi/n4-kXK4vx3k/0.jpg)](http://www.youtube.com/watch?v=n4-kXK4vx3k)
 
 # Blog
 
